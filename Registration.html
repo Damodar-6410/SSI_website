@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body
+        {
+            font-size: 30px;
+            background-color: rgb(249, 223, 223));
+        }
+        input.larger {
+        width: 25px;
+        height: 25px;
+        background-color: greenyellow;
+        }
+        #id1
+        {
+            margin-left: 50px;
+            color: azure;
+        }
+        #id2
+        {
+            margin-left: 50px;
+        }
+        #id3
+        {
+            color:rgb(17, 100, 145);
+            background-color: rgb(84, 241, 11);
+        }
+        .class1
+        {
+            font-size: 23px;
+            margin-left: 50px;
+        }
+        .class2
+        {
+            margin-left: 300px;
+        }
+        .class3
+        {
+            border-radius: 10px;
+            font-size: 32px;
+            background-color:#2e2e53;
+            color: rgb(247, 250, 250);
+        }
+    </style>
+</head>
+<body>
+    <form action="first.html" method="post">
+        <table border=" " cellpadding="0" cellspacing="5" align="center" style="background-color:rgb(148, 147, 169);color:rgb(25, 22, 22);text-align:left;height:60%;width:78%;font-size:40px">
+            <tr text style="background-color:rgb(84, 241, 11);color:rgb(26, 15, 15);text-align:center"><th colspan="2"><span style="font-size:55px;">Student Registration Form</span></th></tr>
+            <tr><th><i id="id1">Name</i></th><td><input type="text" name="uname" placeholder="Enter User Name"  maxlength="30" class="class1" required></td></tr>
+            <tr><th><i id="id1">Father name</i></th><td><input type="text" name="fname" placeholder="Enter Father Name"  maxlength="30" class="class1" required></td></tr>
+            <tr><th><i id="id1">Date of Birth</i></th><td><input type="Date" name="DOB" placeholder="DD-MM-YYYY" class="class1" required></td></tr>
+            <tr><th><i id="id1">Email Address</i></th><td><input type="email" name="email" placeholder="Enter Valid Email" maxlength="30" class="class1" required></td></tr>
+            <tr><th><i id="id1">Enter password</i></th><td><input type="password" name="pwd" minlength="8" maxlength="12" class="class1" placeholder="Enter Valid Password" required></td></tr>
+            <tr><th><i id="id1">Select Gender</i></th><td><i id="id2">Male</i><input type="radio" name="Gender" value="Male" style="margin-left: 65px;" class="larger"><br><i id="id2">Female</i><input type="radio" name="Gender" value="Female" style="margin-left: 29px;" class="larger"> <br><i id="id2">Other</i><input type="radio" name="Gender" value="Other" style="margin-left: 56px;" class="larger" required></td></tr>
+            <tr><th><i id="id1">Select State</i></th><td><select name="state" class="class1" required><option>.............</option><option value="Madhya pradesh">Madhya Pradesh</option><option value="Uttar Pradesh">Uttar Pradesh</option><option value="Rajasthan">Rajasthan</option><option value="Maharashtra">Maharashtra</option><option value="Chhattisgarh">Chhattisgarh</option></select></td></tr>
+            <tr><th><i id="id1">Select Courses</i></th><td><i id="id2">C</i><input type="checkbox" name="Courses" value="C" style="margin-left: 180px;" class="larger"><br><i id="id2">C++</i><input type="checkbox" name="Courses" value="C++" style="margin-left: 125px;" class="larger"><br><i id="id2">JAVA</i><input type="checkbox" name="Courses" value="java" style="margin-left: 120px;" class="larger"><br><i id="id2">PYTHON</i><input type="checkbox" name="Courses" value="python" style="margin-left: 52px;" class="larger"><br><i id="id2">WEB DEV.</i><input type="checkbox" name="Courses" value="webdevelopment" style="margin-left: 30px;" class="larger"></td></tr>
+            <tr><th><i id="id1">Add Image</i></th><td><input type="file" name="img" class="class1" required></td></tr>
+            <tr><th><i id="id1">Add Documents</i></th><td><input type="file" name="img1" multiple  class="class1" required></td></tr>
+            <tr><th><i id="id1">Select Hobbies</i></th><td><i id="id2">Cricket</i><input type="checkbox" name="hobbie" value="Cricket" style="margin-left: 72px;" class="larger"><br><i id="id2">Football</i><input type="checkbox" name="hobbie" value="Football" style="margin-left: 55px;" class="larger"><br><i id="id2">Hocky</i><input type="checkbox" name="hobbie" value="Hocky" style="margin-left: 90px;" class="larger"><br><i id="id2">Badminton</i><input type="checkbox" name="hobbie" value="Badminton" style="margin-left: 18px;" class="larger"><br><i id="id2">Tennis</i><input type="checkbox" name="hobbie" value="Tennis" style="margin-left: 90px;" class="larger"></td></tr>
+            <tr><th><i id="id1">How Much Do You Know English?</i></th><td><input type="range" class="class1" required></td></tr>
+            <tr><th><i id="id1">Choose Your Favorite Color<br>(For Security Purpose)</i></th><td><input type="color" class="class1" required></td></tr>
+            <tr id="id3"><th colspan="2"><input type="checkbox" name="condition" value="true" style="margin-left: 50px;" class="larger" required><i id="id2">I Accept the term and condition</i></th></tr>
+            <tr text style="text-align:center" id="id3"><th colspan="2"><input type="Submit" value="Register" class="class3"><span class="class2"></span><input type="Reset" class="class3"></th></tr>
+        </table>
+    </form>
+</body>
+</html>
